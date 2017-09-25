@@ -1,4 +1,4 @@
-﻿--Hannah Youssef
+--Hannah Youssef
 --Lab 4 exercises (09/25/17)
 
 --#1: Get the cities of agents booking an order for a customer whose cid is 'c006'.
@@ -64,3 +64,7 @@ where not city = 'Duluth' and
 			from Customers
 			where city = 'Duluth' or 
 				city = 'Kyoto');
+                
+--#8: Tell me about check constraints: What are they? What are they good for? What’s the advantage of putting that sort of thing inside the database? Make up some examples of good uses of check constraints and some examples of bad uses of check constraints. Explain the differences in your examples and argue your case.
+
+--A check constraint is used to limit the range of values that can be entered for a column.
