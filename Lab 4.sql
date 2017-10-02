@@ -1,5 +1,5 @@
 --Hannah Youssef
---Lab 4 exercises (09/25/17)
+--Lab 4 exercises (09/25/17-10/02/17)
 
 --#1: Get the cities of agents booking an order for a customer whose cid is 'c006'.
 select distinct city
@@ -67,4 +67,10 @@ where not city = 'Duluth' and
                 
 --#8: Tell me about check constraints: What are they? What are they good for? What’s the advantage of putting that sort of thing inside the database? Make up some examples of good uses of check constraints and some examples of bad uses of check constraints. Explain the differences in your examples and argue your case.
 
---A check constraint is used to limit the range of values that can be entered for a column.
+/* 
+-A check constraint is used to limit the range of values that can be entered for a column. The check constraint enables a condition to check the value being entered into a record. If the condition evaluated to false, the record violates the constraint and isn’t entered the table.
+-The advantage of putting a CHECK constraint in a database is that it will help regulate the data and make sure that no data that violate the rules are inserted into the database.
+-One example of a good database that uses CHECK restraints is one where the database designer is looking to gather the data just on people 18 and older. The SQL line of code they would create for the check restraint would be: “CHECK (Age>=18)”, ensuring that data entered into the table would only be visible if the age is greater than or equal to 18.
+-An example of a bad use of CHECK restraint would be if someone is trying to gather data on letters of the alphabet, and sets a CHECK restraint as all of the letters of the alphabet (A-Z). In this case, there would be no point of setting a CHECK restraint at all, since any letter entered would be shown on the table, regardless of the constraint being present or not.
+-In the first example, the CHECK constraint would be appropriate if the database creator would like to display only ages 18 and up, as opposed to the last example, where the letters of the alphabet would be displayed despite the restraint being written.
+*/
