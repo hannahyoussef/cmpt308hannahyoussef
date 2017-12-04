@@ -1,3 +1,11 @@
+-- Hannah Youssef
+-- Database Management
+-- Alan Labouseur
+-- Design Project
+-- 4 December 2017
+
+-- Lost and Found Database --
+
 DROP VIEW IF EXISTS CurrentReporters;
 DROP VIEW IF EXISTS OldUnverifiedUsers;
 DROP VIEW IF EXISTS MostCommonLostLocation;
